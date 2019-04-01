@@ -1,0 +1,10 @@
+name,age,gender,marital_status,education,available_for_work,trade,experience,avatar
+Cheryl Cole,adult,female,single,highschool,4/12/19,FALSE,professional,https://images.pexels.com/photos/859199/pexels-photo-859199.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+Ginger Snaps,adult,female,married,highschool,4/11/19,FALSE,labor,https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+Minnie Mouse,adult,female,divorced,college,5/12/19,TRUE,semiskilled,https://images.pexels.com/photos/911591/pexels-photo-911591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+Bobby Brown,family,male,married,highschool,6/12/20,TRUE,skilled,https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+Tyrone Smalls,youth,male,single,highschool,4/25/19,FALSE,labor,https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+Jasper Brown,youth,male,married,none,4/30/19,TRUE,labor,https://images.pexels.com/photos/343717/pexels-photo-343717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+Chance Fountain,youth,male,single,none,4/25/19,TRUE,labor,https://images.pexels.com/photos/555790/pexels-photo-555790.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+Prince Fountain,youth,male,married,college,4/6/19,FALSE,semiskilled,https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+Cliff Mills,family,male,married,highschool,4/6/19,FALSE,labor,https://images.pexels.com/photos/736715/pexels-photo-736715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940

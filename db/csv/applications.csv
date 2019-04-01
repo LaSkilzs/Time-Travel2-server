@@ -1,0 +1,10 @@
+profile_id,job_title,citizenship,parent_union,parent_trade,entreprenuership,work_with_others,monotous_task,work_life_balance,work_environment,too_many_hours,work_location,app_score,helpwanted_id,status
+1,maid,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,central,45,1,applied
+2,maid,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,northern,60,2,denied
+3,maid,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,southern,71,3,in-review
+4,apprentice,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,western,64,7,unqualified
+5,apprentice,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,new england,80,8,hired
+6,apprentice,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,northern,58,11,applied
+7,apprentice,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,central,32,13,unqualified
+8,apprentice,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,southern,60,14,hired
+9,apprentice,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,southern,59,15,in-review
