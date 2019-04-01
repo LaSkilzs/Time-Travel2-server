@@ -1,0 +1,59 @@
+id,location,wage_per_week,housing_offered,female,job_id,image
+1,Florida,3.15,TRUE,TRUE,36,https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Butlerveracruz.jpg/250px-Butlerveracruz.jpg
+2,Maryland,4.15,TRUE,TRUE,36,https://www.thesocialhistorian.com/wp-content/uploads/2016/07/Laundress.jpg
+3,West Virginia,5.00,TRUE,TRUE,36,https://3.bp.blogspot.com/-CRZA37ZMiX4/Wj8q2-_jHDI/AAAAAAAAO0s/gJSNagJs2NADfTpkqbjHOYf6k4dR4VHuACLcBGAs/s1600/rat_catchers.jpg
+4,South Dakota,5.00,TRUE,TRUE,36,https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Butlerveracruz.jpg/250px-Butlerveracruz.jpg
+5,Louisiana,5.15,FALSE,TRUE,36,https://3.bp.blogspot.com/-CRZA37ZMiX4/Wj8q2-_jHDI/AAAAAAAAO0s/gJSNagJs2NADfTpkqbjHOYf6k4dR4VHuACLcBGAs/s1600/rat_catchers.jpg
+6,North Dakota,5.50,FALSE,TRUE,36,https://3.bp.blogspot.com/-CRZA37ZMiX4/Wj8q2-_jHDI/AAAAAAAAO0s/gJSNagJs2NADfTpkqbjHOYf6k4dR4VHuACLcBGAs/s1600/rat_catchers.jpg
+7,Georgia,5.75,TRUE,FALSE,89,https://i.pinimg.com/originals/31/98/22/3198224efac5dfceef6be3654562c16c.jpg
+8,North Carolina,6.00,FALSE,FALSE,89,https://i.ytimg.com/vi/SI9K8ZJqAwE/maxresdefault.jpg
+9,Nebraska,6.00,FALSE,TRUE,36,https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Butlerveracruz.jpg/250px-Butlerveracruz.jpg
+10,Tennessee,6.15,FALSE,TRUE,36,https://3.bp.blogspot.com/-CRZA37ZMiX4/Wj8q2-_jHDI/AAAAAAAAO0s/gJSNagJs2NADfTpkqbjHOYf6k4dR4VHuACLcBGAs/s1600/rat_catchers.jpg
+11,South Carolina,6.25,FALSE,FALSE,86,https://www.officemuseum.com/IMagesWWW/1900_Minnesota_1900_pf071612_OM.JPG
+12,Wisconsin,6.50,FALSE,TRUE,36,https://www.thevintagenews.com/wp-content/uploads/2016/07/A-typical-Birmingham-messenger-640x452.jpg
+13,Florida,6.60,FALSE,FALSE,87,https://uofllibraries.files.wordpress.com/2013/11/groupmenengine209_t.jpg
+14,Maryland,6.75,TRUE,FALSE,90,https://c8.alamy.com/comp/DCP2YA/miners-hauliers-early-1900s-DCP2YA.jpg
+15,Texas,6.75,FALSE,FALSE,88,https://c1.staticflickr.com/1/454/32373348331_148bc0c6ac_b.jpg
+16,Missouri,6.75,TRUE,TRUE,36,https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Butlerveracruz.jpg/250px-Butlerveracruz.jpg
+17,Virginia,7.15,FALSE,FALSE,82,https://s.hdnux.com/photos/44/15/75/9494345/5/gallery_medium.jpg
+18,Mississippi,7.25,FALSE,FALSE,16,https://www.thevintagenews.com/wp-content/uploads/2016/07/A-typical-Birmingham-messenger-640x452.jpg
+19,Arkansas,7.35,FALSE,FALSE,16,https://www.thevintagenews.com/wp-content/uploads/2016/07/A-typical-Birmingham-messenger-640x452.jpg
+20,Distriict of Columbia,7.50,FALSE,FALSE,82,https://www.lib.uwo.ca/archives/virtualexhibits/londonasylum/images/SK_PatientsInFieldE.jpg
+21,Louisiana,7.50,FALSE,FALSE,82,https://i.ytimg.com/vi/SI9K8ZJqAwE/maxresdefault.jpg
+22,Michigan,7.50,FALSE,FALSE,82,https://i.ytimg.com/vi/SI9K8ZJqAwE/maxresdefault.jpg
+23,Alabama,7.70,FALSE,FALSE,82,https://s.hdnux.com/photos/44/15/75/9494345/5/gallery_medium.jpg
+24,Delaware,8.00,FALSE,FALSE,82,https://s.hdnux.com/photos/44/15/75/9494345/5/gallery_medium.jpg
+25,West Virginia,8.00,FALSE,FALSE,82,https://www.agclassroom.org/gan/timeline/pictures/1840_gov.jpg
+26,Kentucky,8.00,FALSE,FALSE,82,https://www.lib.uwo.ca/archives/virtualexhibits/londonasylum/images/SK_PatientsInFieldE.jpg
+27,Tennessee,8.00,FALSE,FALSE,82,https://i.ytimg.com/vi/SI9K8ZJqAwE/maxresdefault.jpg
+28,Connecticut,8.00,FALSE,TRUE,82,https://www.lib.uwo.ca/archives/virtualexhibits/londonasylum/images/SK_PatientsInFieldE.jpg
+29,Pennyslvania,8.00,TRUE,TRUE,82,https://www.lib.uwo.ca/archives/virtualexhibits/londonasylum/images/SK_PatientsInFieldE.jpg
+30,Pennyslvania,8.00,TRUE,FALSE,82,https://s.hdnux.com/photos/44/15/75/9494345/5/gallery_medium.jpg
+31,Oklahoma,8.50,FALSE,FALSE,82,https://s.hdnux.com/photos/44/15/75/9494345/5/gallery_medium.jpg
+32,New York,9.00,TRUE,FALSE,82,https://www.agclassroom.org/gan/timeline/pictures/1840_gov.jpg
+33,New Jersey,9.00,FALSE,FALSE,82,https://www.lib.uwo.ca/archives/virtualexhibits/londonasylum/images/SK_PatientsInFieldE.jpg
+34,Ohio,9.15,TRUE,FALSE,82,https://i.ytimg.com/vi/SI9K8ZJqAwE/maxresdefault.jpg
+35,Indiana,10.00,TRUE,FALSE,69,https://uofllibraries.files.wordpress.com/2013/11/groupmenengine209_t.jpg
+36,IIllinois,10.00,FALSE,FALSE,47,https://c8.alamy.com/comp/DCP2YA/miners-hauliers-early-1900s-DCP2YA.jpg
+37,Iowa,10.00,FALSE,FALSE,2,https://i.ytimg.com/vi/SI9K8ZJqAwE/maxresdefault.jpg
+38,New Hampshire,10.00,TRUE,TRUE,11,https://www.officemuseum.com/IMagesWWW/1900_Minnesota_1900_pf071612_OM.JPG
+39,Massachusetts,10.00,FALSE,TRUE,11,https://www.officemuseum.com/IMagesWWW/1900_Minnesota_1900_pf071612_OM.JPG
+40,New York,10.00,FALSE,TRUE,11,http://www.capitalcentury.com/Team.jpg
+41,New Jersey,10.00,TRUE,TRUE,11,https://www.officemuseum.com/IMagesWWW/1900_Minnesota_1900_pf071612_OM.JPG
+42,Minnesota,10.25,TRUE,FALSE,71,https://uofllibraries.files.wordpress.com/2013/11/groupmenengine209_t.jpg
+43,California,12.00,FALSE,TRUE,11,http://www.capitalcentury.com/Team.jpg
+44,Rhode Island,12.00,TRUE,FALSE,71,https://uofllibraries.files.wordpress.com/2013/11/groupmenengine209_t.jpg
+45,Connecticut,12.00,FALSE,FALSE,1,https://www.agclassroom.org/gan/timeline/pictures/1840_gov.jpg
+46,Arizona,12.50,FALSE,TRUE,11,https://www.officemuseum.com/IMagesWWW/1900_Minnesota_1900_pf071612_OM.JPG
+47,Massachusetts,13.00,FALSE,FALSE,49,https://libcom.org/files/images/history/glassfactory.jpg
+48,Colorado,13.50,TRUE,TRUE,11,https://www.officemuseum.com/IMagesWWW/1900_Minnesota_1900_pf071612_OM.JPG
+49,Oregon,13.50,TRUE,TRUE,11,https://www.officemuseum.com/IMagesWWW/1900_Minnesota_1900_pf071612_OM.JPG
+50,New Mexico,14.00,TRUE,FALSE,9,https://s.hdnux.com/photos/44/15/75/9494345/5/gallery_medium.jpg
+51,Vermont,14.50,FALSE,FALSE,51,https://c8.alamy.com/comp/DCP2YA/miners-hauliers-early-1900s-DCP2YA.jpg
+52,New Hampshire,14.75,FALSE,FALSE,50,https://c8.alamy.com/comp/DCP2YA/miners-hauliers-early-1900s-DCP2YA.jpg
+53,Wyoming,15.00,FALSE,FALSE,47,https://libcom.org/files/images/history/glassfactory.jpg
+54,Washnigton,15.25,FALSE,FALSE,13,https://libcom.org/files/images/history/glassfactory.jpg
+55,Utah,15.50,FALSE,FALSE,15,https://www.officemuseum.com/IMagesWWW/1900_Minnesota_1900_pf071612_OM.JPG
+56,Idaho,15.75,TRUE,TRUE,11,https://i.pinimg.com/originals/31/98/22/3198224efac5dfceef6be3654562c16c.jpg
+57,Montana,16.50,FALSE,FALSE,9,https://www.agclassroom.org/gan/timeline/pictures/1840_gov.jpg
+58,Nevada,16.75,FALSE,FALSE,52,https://libcom.org/files/images/history/glassfactory.jpg
