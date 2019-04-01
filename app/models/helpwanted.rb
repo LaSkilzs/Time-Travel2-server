@@ -3,7 +3,7 @@ class Helpwanted < ApplicationRecord
   has_many :applications
   has_many :profiles, through: :applications
   
-  enum location: [:central, :northern, :southern, :western, :new_england]
+  # enum location: [:central, :northern, :southern, :western, :new_england]
 
   # validates, :location, presence: true
   # validates, :female, presence: true

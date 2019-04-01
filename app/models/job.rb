@@ -1,13 +1,13 @@
 class Job < ApplicationRecord
   belongs_to :industry
   has_many :help_wanteds
-  enum age: [:family, :adult, :youth]
-  enum gender: [:female, :male]
-  enum travel: [:home, :often, :occassion]
-  enum work_environment: [:weathered, :unweathered, :mixed]
-  enum experience: [:skilled, :semiskilled, :professional, :laborer]
-  enum days_of_week: ['Mon-Fri', 'Mon-Sat', 'Everyday']
-  enum education: [:highschool, :college, :some_education, :none]
+  enum age: {family: "family", adult: "adult", youth: "youth"}
+  enum gender: {female: "female", male: "male", both: "both"}
+  enum travel: {home: "home", often: "often", occasion: "occassion"}
+  enum work_environment: {weathered: "weathered", unweathered: "unweathered", mixed: "mixed"}
+  enum experience: {skilled: "skilled", semiskilled: "semiskilled", kindred: "kindred", professional: "professional", laborer: "laborer"}
+  enum days_of_week: {Mon_Fri:'Mon-Fri', Mon_Sat: 'Mon-Sat', Everyday: 'Everyday'}
+  enum education: {highschool: "highschool", college: "college", some_education: "some_education", uneducated: "uneducated"}
    
   # validates :name, presence: true
   # validates :education, presence: true
