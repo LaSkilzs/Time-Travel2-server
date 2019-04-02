@@ -22,13 +22,11 @@ RSpec.describe Job, type: :model do
       job = FactoryBot.build :job, experience: ' '
       expect(job).not_to be_valid
       expect(job.errors[:experience]).to include("can't be blank")
-     
     end
 
     it 'expect apprenticeship to be present' do
       job = FactoryBot.build :job, apprenticeship: ' '
-      expect(job).not_to be_valid
-      expect(job.errors[:apprenticeship]).to include("can't be blank")
+      expect(job).to be_valid
     end
 
     it 'expect work_environment to be present' do
@@ -106,6 +104,5 @@ RSpec.describe Job, type: :model do
       expect(job).not_to be_valid
       expect(job.errors[:job_score]).to include("can't be blank")
     end
-
   end
 end

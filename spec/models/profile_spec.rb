@@ -13,16 +13,14 @@ RSpec.describe Profile, type: :model do
     end
 
     it 'expect trade to be present' do
-      profile = FactoryBot.build :profile, trade: ' '
-      expect(profile).not_to be_valid
-      expect(profile.errors[:trade]).to eq([])
+      profile = FactoryBot.build :profile, trade: true
+      expect(profile).to be_valid
     end
 
     it 'expect gender to be present' do
       profile = FactoryBot.build :profile, gender: ' '
       expect(profile).not_to be_valid
       expect(profile.errors[:gender]).to include("can't be blank")
-     
     end
 
     it 'expect marital_status to be present' do
@@ -45,9 +43,9 @@ RSpec.describe Profile, type: :model do
     end
 
     it 'expect available_for_work to be present' do
-      profile = FactoryBot.build :profile, available_for_work: ' '
-      expect(profile).not_to be_valid
-      expect(profile.errors[:available_for_work]).to include("can't be blank")
+      profile = FactoryBot.build :profile, available_for_work: true
+      expect(profile).to be_valid
+      # expect(profile.errors[:available_for_work]).to include("can't be blank")
     end
   end
 end

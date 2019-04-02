@@ -12,7 +12,7 @@ class Job < ApplicationRecord
   validates :name, presence: true
   validates :education, presence: true
   validates :experience, presence: true
-  validates :apprenticeship, presence: true
+  validates :apprenticeship, presence: false
   validates :work_environment, presence: true
   validates :age, presence: true
   validates :gender, presence: true

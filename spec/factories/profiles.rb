@@ -10,7 +10,7 @@ FactoryBot.define do
     available_for_work { "4/20/19" }
     experience { "laborer" }
     avatar { "MyString" }
-    trade { false }
+    trade { true }
     user
   end
 end

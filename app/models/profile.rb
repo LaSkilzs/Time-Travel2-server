@@ -14,5 +14,5 @@ class Profile < ApplicationRecord
   validates :marital_status, presence: true
   validates :education, presence: true
   validates :experience, presence: true
-  validates :available_for_work, presence: true
+  validates :available_for_work, presence: false
 end
