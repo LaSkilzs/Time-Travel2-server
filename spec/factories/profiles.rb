@@ -6,7 +6,7 @@ FactoryBot.define do
     ethnicity { "MyString" }
     religion { "MyString" }
     marital_status { "single" }
-    education { "none" }
+    education { "uneducated" }
     available_for_work { "4/20/19" }
     experience { "laborer" }
     avatar { "MyString" }

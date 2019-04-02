@@ -12,9 +12,10 @@ FactoryBot.define do
     low_hours_of_work { 1 }
     high_hours_of_work { 1 }
     job_openings { 1 }
-    apprenticeship { false }
-    education { "none" }
+    education { "uneducated" }
     job_score { 1 }
+    apprenticeship { false }
+    job_description { "MyString" }
     industry 
   end
 end

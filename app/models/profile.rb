@@ -8,11 +8,11 @@ class Profile < ApplicationRecord
   enum education: {highschool: "highschool", college: "college", some_education: "some_education", uneducated: "uneducated"}
   enum experience: {skilled: "skilled", semiskilled: "semiskilled", kindred: "kindred", professional: "professional", laborer: "laborer"}
 
-  # validates, :name, presence: true, uniqueness: true
-  # validates, :trade, presence: true
-  # validates, :gender, presence: true
-  # validates, :marital_status, presence: true
-  # validates, :education, presence: true
-  # validates, :experience, presence: true
-  # validates, :available_for_work, presence: true
+  validates :name, presence: true, uniqueness: true
+  validates :trade, presence: true
+  validates :gender, presence: true
+  validates :marital_status, presence: true
+  validates :education, presence: true
+  validates :experience, presence: true
+  validates :available_for_work, presence: true
 end

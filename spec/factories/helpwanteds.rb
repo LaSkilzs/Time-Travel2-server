@@ -4,7 +4,7 @@ FactoryBot.define do
     image { "MyString" }
     wage_per_week { 1.5 }
     housing_offered { false }
-    female { false }
+    female { true }
     job 
   end
 end
