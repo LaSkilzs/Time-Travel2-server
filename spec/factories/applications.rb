@@ -9,7 +9,7 @@ FactoryBot.define do
     work_life_balance { false }
     work_environment { false }
     too_many_hours { false }
-    work_location { "MyString" }
+    work_location { "central" }
     job_title { "MyString" }
     status { "applied" }
     app_score { 65 }
