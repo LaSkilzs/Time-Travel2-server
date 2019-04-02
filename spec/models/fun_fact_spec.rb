@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe FunFact, type: :model do
-  context 'create funfact' do
+  context 'test funfact validation' do
     it 'should create a valid factory' do
       expect(FactoryBot.build :fun_fact).to be_valid
     end
@@ -17,5 +17,8 @@ RSpec.describe FunFact, type: :model do
       expect(fun_fact).not_to be_valid
       expect(fun_fact.errors[:fact_length]).to include("can't be blank")
     end
+  end
+   context 'test funfact associations' do
+      it {should belong_to(:generation)}
   end
 end

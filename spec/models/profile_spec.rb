@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Profile, type: :model do
- context 'create profile' do
+ context 'test profile validations' do
     it 'should create a valid factory' do
       expect(FactoryBot.build :profile).to be_valid
     end
@@ -13,9 +13,14 @@ RSpec.describe Profile, type: :model do
     it {should validate_presence_of(:experience)}  
     it {should validate_presence_of(:trade)} 
     it {should validate_presence_of(:available_for_work)} 
-
+  end
+  context 'test profile associations' do
   
-    
+    it { should belong_to(:user)}
+    it { should have_many(:applications)}
+    it { should have_many(:helpwanteds)}
+
+
 
   end
 end

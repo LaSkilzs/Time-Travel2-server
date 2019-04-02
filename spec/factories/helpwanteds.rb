@@ -3,9 +3,9 @@ require 'faker'
 FactoryBot.define do
  
   factory :helpwanted do
-    location { "central" }
+    location { Faker::Address.state }
     image { "MyString" }
-    wage_per_week { 1.5 }
+    wage_per_week { rand(3..9) }
     housing_offered { "MyString" }
     female {"MyString"}
     job 

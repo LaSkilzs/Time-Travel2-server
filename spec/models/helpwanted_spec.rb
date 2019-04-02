@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Helpwanted, type: :model do
-  context 'create helpwanted' do
+  context 'test helpwanted validations' do
     it 'should create a valid factory' do
       expect(FactoryBot.build :helpwanted).to be_valid
     end
@@ -20,5 +20,10 @@ RSpec.describe Helpwanted, type: :model do
       helpwanted = FactoryBot.build :helpwanted, housing_offered: true
       expect(helpwanted).to be_valid
     end
+  end
+   context 'test industry associations' do
+      it {should belong_to(:job)}
+      it {should have_many(:profiles)}
+      it {should have_many(:applications)}
   end
 end

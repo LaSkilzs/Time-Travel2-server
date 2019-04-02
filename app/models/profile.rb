@@ -1,7 +1,9 @@
 class Profile < ApplicationRecord
   belongs_to :user
-  has_many :applications
+  has_many :applications, dependent: :destroy
   has_many :helpwanteds, through: :applications
+
+  
   enum age: {family: "family", adult: "adult", youth: "youth"}
   enum gender: {female: "female", male: "male"}
   enum marital_status: {single: "single", divorced: "divorced", married: "married", widowed: "widowed"}

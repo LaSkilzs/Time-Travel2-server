@@ -1,6 +1,6 @@
 class Helpwanted < ApplicationRecord
   belongs_to :job
-  has_many :applications
+  has_many :applications, dependent: :destroy
   has_many :profiles, through: :applications
   
   validates :location, presence: true

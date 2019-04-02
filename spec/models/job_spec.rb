@@ -1,12 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Job, type: :model do
- context 'create job' do
+ context 'test job validations' do
     it 'should create a valid factory' do
       expect(FactoryBot.build :job).to be_valid
     end
 
-     it {should validate_presence_of(:apprenticeship)}
+    it {should validate_presence_of(:apprenticeship)}
     it {should validate_presence_of(:name)}
     it {should validate_presence_of(:education)}
     it {should validate_presence_of(:experience)}
@@ -22,6 +22,9 @@ RSpec.describe Job, type: :model do
     it {should validate_presence_of(:high_hours_of_work)}
     it {should validate_presence_of(:job_openings)}
     it {should validate_presence_of(:job_score)}
-
+  end
+  context 'test job validations' do
+    it { should belong_to(:industry)}
+    it { should have_many(:helpwanteds)}
   end
 end

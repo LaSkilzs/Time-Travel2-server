@@ -1,8 +1,10 @@
+require 'faker'
+
 FactoryBot.define do
   factory :industry do
     name { "MyString" }
-    summary { "MyText" }
-    available_jobs { 1 }
+    summary { Faker::Lorem.paragraphs(1) }
+    available_jobs { rand(1..70) }
     image { "MyString" }
     generation
   end

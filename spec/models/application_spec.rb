@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Application, type: :model do
-  context 'create application' do
+  context 'test application validations' do
     it 'should create a valid factory' do
       expect(FactoryBot.build :application).to be_valid
     end
@@ -29,5 +29,9 @@ RSpec.describe Application, type: :model do
       expect(application).not_to be_valid
       expect(application.errors[:job_title]).to include("can't be blank")
     end 
+  end
+   context 'test application associations' do
+      it {should belong_to(:profile)}
+      it {should belong_to(:helpwanted)}
   end
 end

@@ -12,7 +12,7 @@ FactoryBot.define do
     work_location { "central" }
     job_title { "MyString" }
     status { "applied" }
-    app_score { 65 }
+    app_score { rand(52..95) }
     profile 
     helpwanted 
   end

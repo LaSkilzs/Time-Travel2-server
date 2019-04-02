@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :profiles
+  has_many :profiles, dependent: :destroy
 
   validates :username, presence: true,  length: {minimum: 5}
   validates :username, uniqueness: true
