@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Industry, type: :model do
- context 'create industry' do
+ context 'test industry validations' do
     it 'should create a valid factory' do
       expect(FactoryBot.build :industry).to be_valid
     end
@@ -30,5 +30,9 @@ RSpec.describe Industry, type: :model do
       expect(industry).not_to be_valid
       expect(industry.errors[:available_jobs]).to include("can't be blank")
     end
+  end
+
+     context 'test industry associations' do
+      it {should belong_to(:generation)}
   end
 end

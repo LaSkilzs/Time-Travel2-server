@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
  
-  context 'create user' do
+  context 'test user validations' do
     it 'should create a valid factory' do
       expect(FactoryBot.build :user).to be_valid
     end
@@ -42,6 +42,9 @@ RSpec.describe User, type: :model do
       user = FactoryBot.build :user, email: "l..lycom"
       expect(user).not_to  be_valid
       expect(user.errors[:email]).to include("The format of Email is Invalid")
+    end
+    context 'test user associations' do
+      it {should have_many(:profiles).dependent(:destroy)}
     end
   end
 end
