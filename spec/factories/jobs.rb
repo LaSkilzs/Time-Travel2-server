@@ -14,7 +14,7 @@ FactoryBot.define do
     job_openings { 1 }
     education { "uneducated" }
     job_score { 1 }
-    apprenticeship { false }
+    apprenticeship { "MyString" }
     job_description { "MyString" }
     industry 
   end

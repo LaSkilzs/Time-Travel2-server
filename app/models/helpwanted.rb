@@ -5,7 +5,8 @@ class Helpwanted < ApplicationRecord
   
   validates :location, presence: true
   validates :wage_per_week, presence: true
-  validates :female, presence: false
-  validates :housing_offered, presence: false
+  validates :female, presence: true
+  validates :housing_offered, presence: true
+
   
 end
