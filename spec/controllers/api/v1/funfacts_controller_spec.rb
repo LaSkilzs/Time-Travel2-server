@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Api::V1::FunFactsController, type: :controller do
+RSpec.describe Api::V1::FunfactsController, type: :controller do
   #   context 'fun_fact controller CRUD routes' do
   #   describe 'GET #index' do
   #     it 'populates an array of fun_facts'
