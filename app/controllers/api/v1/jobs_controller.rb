@@ -3,7 +3,7 @@ class Api::V1::JobsController < ApplicationController
 
 
   def index
-    @jobs = Job.all
+    @jobs = Job.all.page(params[:page])
     render json: @jobs, status: 200
   end
 
