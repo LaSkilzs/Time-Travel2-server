@@ -3,7 +3,7 @@ class Api::V1::HelpwantedsController < ApplicationController
 
 
   def index
-    @helpwanteds = Helpwanted.all
+    @helpwanteds = Helpwanted.all.page((params[:page] ? params[:page].to_i : 1))
     render json: @helpwanteds, status: 200
   end
 

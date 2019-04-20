@@ -3,7 +3,7 @@ class Api::V1::ApplicationsController < ApplicationController
 
 
   def index
-    @applications = Application.all
+       @applications = Application.all.page((params[:page] ? params[:page].to_i : 1))
     render json: @applications, status: 200
   end
 

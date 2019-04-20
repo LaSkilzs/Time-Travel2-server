@@ -1,11 +1,14 @@
 class Api::V1::JobsController < ApplicationController
+  after_action only: [:index] { set_pagination_header(:jobs) }
   before_action :find_job, only: [:show, :update]
 
 
   def index
-    @jobs = Job.all.page(params[:page])
+    @jobs = Job.all.page((params[:page] ? params[:page].to_i : 1))
     render json: @jobs, status: 200
   end
+
+
 
   def show
     if @job
