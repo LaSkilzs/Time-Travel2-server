@@ -1,11 +1,22 @@
 class Api::V1::JobsController < ApplicationController
-  after_action only: [:index] { set_pagination_header(:jobs) }
   before_action :find_job, only: [:show, :update]
 
 
+
   def index
-    @jobs = Job.all.page((params[:page] ? params[:page].to_i : 1))
-    render json: @jobs, status: 200
+    @total_pages = (Job.count/5).ceil
+    params[:page] = 1 if params[:page].to_i < 1 || params[:page].to_i > @total_pages
+    @jobs = Job.all.page((params[:page]))
+    @current_page = params[:page]
+    
+    pagination = {
+      current_page: @current_page,
+      last_page: @total_pages,
+      next_page_url: "http://localhost:3000/api/v1/jobs?page=#{@current_page.to_i + 1}",
+      prev_page_url: "http://localhost:3000/api/v1/jobs?page=#{@current_page.to_i - 1}"
+    }
+
+    render json: {jobs: @jobs, pagination: pagination}, status: 200
   end
 
 
