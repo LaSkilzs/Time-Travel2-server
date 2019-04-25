@@ -1,6 +1,6 @@
 class Api::V1::JobsController < ApplicationController
   before_action :find_job, only: [:show, :update]
-
+  
 
 
   def index
@@ -17,6 +17,23 @@ class Api::V1::JobsController < ApplicationController
     }
 
     render json: {jobs: @jobs, pagination: pagination}, status: 200
+  end
+
+  def filtered
+    @job = Job.find(params[:job_id])
+    @total_pages = (@job.helpwanteds.count/5).ceil
+    params[:page] = 1 if params[:page].to_i < 1 || params[:page].to_i > @total_pages
+    @helpwanteds = @job.helpwanteds.page((params[:page]))
+    @current_page = params[:page]
+    
+    pagination = {
+      current_page: @current_page,
+      last_page: @total_pages,
+      next_page_url: "http://localhost:3000/api/v1/jobs?page=#{@current_page.to_i + 1}",
+      prev_page_url: "http://localhost:3000/api/v1/jobs?page=#{@current_page.to_i - 1}"
+    }
+
+    render json: {helpwanteds: @helpwanteds,job: @job, pagination: pagination }, status: 200
   end
 
 

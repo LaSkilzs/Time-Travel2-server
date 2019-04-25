@@ -17,7 +17,7 @@ class Api::V1::HelpwantedsController < ApplicationController
 
     render json: {helpwanteds: @helpwanteds, pagination: pagination}, status: 200
   end
-
+ 
   def show
     helpwanted = find_helpwanted
     if helpwanted

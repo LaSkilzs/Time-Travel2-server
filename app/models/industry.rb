@@ -1,5 +1,6 @@
 class Industry < ApplicationRecord
   belongs_to :generation
+  has_many :jobs
 
   validates :name, presence: true
   validates :summary, presence: true

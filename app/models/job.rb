@@ -26,7 +26,7 @@ class Job < ApplicationRecord
   validates :job_openings, presence: true, numericality: { only_integer: true }
   validates :job_score, presence: true, numericality: { only_integer: true }
 
-
+ 
 
   def self.avg_wage
     self.start_avg_wage_per_week + self.end_avg_wage_per_week / 2
