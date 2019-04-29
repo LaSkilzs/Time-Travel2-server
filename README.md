@@ -1,24 +1,22 @@
-# README
+## TimeTravel App Api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the api for the timetime travel app. The api features
 
-Things you may want to cover:
+1. Authorization/Authentication
+2. Serialization
+3. Pagination
+4. Relational Database Design(normalization, associations)
+5. Testing
+6. API Versioning
 
-* Ruby version
+# Technologies
 
-* System dependencies
+1. Ruby
+2. Rails
+3. Rspec
 
-* Configuration
+## Illustration/GIFS.
 
-* Database creation
+## Authors
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+By La Fountain

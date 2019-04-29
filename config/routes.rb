@@ -3,12 +3,16 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users
       resources :profiles
-      resources :jobs
-      resources :industries
       resources :helpwanteds
       resources :generations
       resources :funfacts
       resources :applications
+      resources :jobs, controller: 'jobs' do
+        get 'filtered' => 'jobs#filtered'
+      end
+      resources :industries, controller: 'industries' do
+        get 'filtered' => 'industries#filtered'
+      end
     end
   end
   

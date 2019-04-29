@@ -3,10 +3,21 @@ class Api::V1::HelpwantedsController < ApplicationController
 
 
   def index
-    @helpwanteds = Helpwanted.all
-    render json: @helpwanteds, status: 200
-  end
+    @total_pages = (Helpwanted.count/5).ceil
+    params[:page] = 1 if params[:page].to_i < 1 || params[:page].to_i > @total_pages
+    @helpwanteds = Helpwanted.all.page((params[:page]))
+    @current_page = params[:page]
+    
+    pagination = {
+      current_page: @current_page,
+      last_page: @total_pages,
+      next_page_url: "http://localhost:3000/api/v1/helpwanteds?page=#{@current_page.to_i + 1}",
+      prev_page_url: "http://localhost:3000/api/v1/helpwanteds?page=#{@current_page.to_i - 1}"
+    }
 
+    render json: {helpwanteds: @helpwanteds, pagination: pagination}, status: 200
+  end
+ 
   def show
     helpwanted = find_helpwanted
     if helpwanted

@@ -3,8 +3,19 @@ class Api::V1::ApplicationsController < ApplicationController
 
 
   def index
-    @applications = Application.all
-    render json: @applications, status: 200
+    @total_pages = (Application.count/5).ceil
+    params[:page] = 1 if params[:page].to_i < 1 || params[:page].to_i > @total_pages
+    @applications = Application.all.page((params[:page]))
+    @current_page = params[:page]
+    
+    pagination = {
+      current_page: @current_page,
+      last_page: @total_pages,
+      next_page_url: "http://localhost:3000/api/v1/applications?page=#{@current_page.to_i + 1}",
+      prev_page_url: "http://localhost:3000/api/v1/applications?page=#{@current_page.to_i - 1}"
+    }
+
+    render json: {applications: @applications, pagination: pagination}, status: 200
   end
 
   def show
