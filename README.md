@@ -16,6 +16,7 @@ This is the api for the timetime travel app. The api features
 3. Rspec
 
 ## Illustration/GIFS.
+Database_Model: https://go.gliffy.com/go/share/sn0dsl9tb07ew9i2guph
 
 ## Authors
 
